@@ -1,70 +1,94 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Little Lemon
 
-In the project directory, you can run:
 
-### `npm start`
+📖 Project Overview
+Little Lemon is a responsive, React-based frontend application for a modern restaurant homepage.
+It features smooth navigation, interactive forms, and polished UI design with CSS animations and modal dialogues.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The site includes:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Home: Featuring specials, ratings, and an "About" section.
+About, Menu, Order Online, Login: Placeholder pages marked "Under Construction".
+Reservations: A functional reservation form with validation, animations, and a success modal.
+🛠️ Technologies
+React (with functional components & hooks)
+React Router DOM for client-side routing
+CSS (flexbox, animations, hover effects)
+📂 File Structure
+src/ components/ Nav.jsx Header.jsx Specials.jsx Ratings.jsx About.jsx ReservationForm.jsx UnderConstruction.jsx Footer.jsx App.jsx styles.css main.jsx
 
-### `npm test`
+🧩 Component Breakdown
+App.jsx
+...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Defines the app’s route structure using React Router:
 
-### `npm run build`
+/ — Home (Header, Specials, Ratings, About)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+/about, /menu, /order-online, /login — Under Construction pages
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+/reservations — Reservation Form
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Nav.jsx
 
-### `npm run eject`
+Navigation bar with:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Logo (left-side)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Links (Home, About, Menu, Reservations, Order Online, Login)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Styled with flex layout and hover effects
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Header, Specials, About
 
-## Learn More
+Static content showcasing the restaurant’s introduction, special dishes, and backstory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ratings.jsx
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Displays user testimonials:
 
-### Code Splitting
+Accepts name, rating, and image fields
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Renders avatar if image provided; otherwise, shows placeholder
 
-### Analyzing the Bundle Size
+Stars, user name, and sample text displayed per review
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ReservationForm.jsx
 
-### Making a Progressive Web App
+Fully interactive form:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Fields: Date, Time, Guests, Occasion
 
-### Advanced Configuration
+Validation logic (required fields, minimum guest count)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Animations (fade-in, scale-in effects)
 
-### Deployment
+Success modal overlays upon submission
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+UnderConstruction.jsx
 
-### `npm run build` fails to minify
+Simple placeholder with “Under Construction” message for incomplete pages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Footer.jsx
+
+Three-column layout:
+
+Left: Logo + title
+
+Middle: Sitemap (links using for navigation)
+
+Right: Contact info
+
+Styled similarly to navbar (flex, hover effects)
+
+🎨 CSS Highlights
+
+Layout: Flex containers for Navbar & Footer, grid for Ratings section
+
+Animations: @keyframes for fade-in and scale-in effects
+
+Interactivity: Hover states for links and buttons (color change, scaling)
+
+Form Styling: Clean inputs, error messaging, modal pop-up design
