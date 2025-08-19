@@ -1,26 +1,40 @@
+# 🍋 Little Lemon
 
-
-Little Lemon
-
-
-📖 Project Overview
-Little Lemon is a responsive, React-based frontend application for a modern restaurant homepage.
+## 📖 Project Overview
+**Little Lemon** is a responsive, React-based frontend application for a modern restaurant homepage.  
 It features smooth navigation, interactive forms, and polished UI design with CSS animations and modal dialogues.
 
 The site includes:
+- **Home**: Featuring specials, ratings, and an "About" section.
+- **About**, **Menu**, **Order Online**, **Login**: Placeholder pages marked "Under Construction".
+- **Reservations**: A functional reservation form with validation, animations, and a success modal.
 
-Home: Featuring specials, ratings, and an "About" section.
-About, Menu, Order Online, Login: Placeholder pages marked "Under Construction".
-Reservations: A functional reservation form with validation, animations, and a success modal.
-🛠️ Technologies
-React (with functional components & hooks)
-React Router DOM for client-side routing
-CSS (flexbox, animations, hover effects)
-📂 File Structure
-src/ components/ Nav.jsx Header.jsx Specials.jsx Ratings.jsx About.jsx ReservationForm.jsx UnderConstruction.jsx Footer.jsx App.jsx styles.css main.jsx
+---
 
-🧩 Component Breakdown
+## 🛠️ Technologies
+- **React** (with functional components & hooks)
+- **React Router DOM** for client-side routing
+- **CSS** (flexbox, animations, hover effects)
+
+---
+
+## 📂 File Structure
+src/
+components/
+Nav.jsx
+Header.jsx
+Specials.jsx
+Ratings.jsx
+About.jsx
+ReservationForm.jsx
+UnderConstruction.jsx
+Footer.jsx
 App.jsx
+styles.css
+main.jsx
+
+## 🧩 Component Breakdown
+### App.jsx
 ...
 
 Defines the app’s route structure using React Router:
@@ -77,7 +91,7 @@ Three-column layout:
 
 Left: Logo + title
 
-Middle: Sitemap (links using for navigation)
+Middle: Sitemap (links using <Link> for navigation)
 
 Right: Contact info
 
@@ -92,3 +106,11 @@ Animations: @keyframes for fade-in and scale-in effects
 Interactivity: Hover states for links and buttons (color change, scaling)
 
 Form Styling: Clean inputs, error messaging, modal pop-up design
+
+📸 Screenshots
+
+<img width="1824" height="973" alt="image" src="https://github.com/user-attachments/assets/aee9a0a5-bc16-4223-9f40-a9ef22c3e6a8" />
+
+
+Other Sections
+<img width="1239" height="1166" alt="Screenshot 2025-08-18 155809" src="https://github.com/user-attachments/assets/36ee2534-a612-4d41-a76a-0ad20d349ebf" />
